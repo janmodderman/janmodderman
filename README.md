@@ -21,24 +21,24 @@ Aero- and Hydrodynamics: Solving both low- and high-fidelity fluid problems.
 # 💻 Tech Stack:
 ![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-#💡 A Note on the PhD Code
+# 💡 A Note on the PhD Code
 The repositories highlighted below represent the culmination of my doctoral work. They transition from theoretical unfitted FEM formulations to practical, hydrodynamic solvers used for analysis of offshore structures.
 
 <table align="center">
   <tr>
     <td align="center" width="33%">
       <a href="https://github.com/janmodderman/EmbeddedBenchmark.jl">
-        <img src="https://img.shields.io/badge/REPO_NAME-Chapter_4-blue?style=for-the-badge&logo=github" alt="Chapter 4 Package" />
+        <img src="https://img.shields.io/badge/Benchmark_Study-Chapter_4-blue?style=for-the-badge&logo=github" alt="Chapter 4 Package" />
       </a>
     </td>
     <td align="center" width="33%">
       <a href="https://github.com/janmodderman/EmbeddedTransientPF.jl">
-        <img src="https://img.shields.io/badge/REPO_NAME-Chapter_5-green?style=for-the-badge&logo=github" alt="Chapter 5 Package" />
+        <img src="https://img.shields.io/badge/Transient_Simulations-Chapter_5-green?style=for-the-badge&logo=github" alt="Chapter 5 Package" />
       </a>
     </td>
     <td align="center" width="33%">
       <a href="https://github.com/janmodderman/EmbeddedCoefficients.jl">
-        <img src="https://img.shields.io/badge/REPO_NAME-Chapter_6-orange?style=for-the-badge&logo=github" alt="Chapter 6 Package" />
+        <img src="https://img.shields.io/badge/Hydrodynamic_Coefficients-Chapter_6-orange?style=for-the-badge&logo=github" alt="Chapter 6 Package" />
       </a>
     </td>
   </tr>
