@@ -9,9 +9,9 @@ Core Expertise: Unfitted / Immersed / Embedded methods, Potential Theory formula
 The Mission: Making numerical modeling more efficient for complex geometries without the traditional "meshing headache".
 
 ## 🛠️ Research Focus & Interests
-Unfitted FEM: Developing algorithms that handle complex and/or moving boundaries without conforming meshes. Specifically: AgFEM, CutFEM, SBM, WSBM, and GSBM.
+Unfitted FEM: Developing algorithms that handle complex and/or moving boundaries without conforming meshes. Specifically: Aggregated unfitted FEM, Cut FEM, Shifted Boundary Method (SBM), Weighted SBM, and Generalized SBM.
 
-Offshore Engineering: Modeling floating wind turbines, platforms, and wave energy converters.
+Offshore Engineering: Modeling floating and submerged platforms for aquaculture, infrastructure and energy.
 
 Aero- and Hydrodynamics: Solving both low- and high-fidelity fluid problems.
 
