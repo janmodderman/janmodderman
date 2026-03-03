@@ -1,47 +1,44 @@
-## 👨‍💻 About Me
-I am a Computational Engineer dedicated to bridging the gap between complex physical phenomena and robust numerical simulations. My work sits at the intersection of FEM/FEA and CFD, with a deep-seated interest in the flexibility and power of unfitted Finite Element Methods.
+# Jan Modderman
 
-## 🎓 Doctoral Research
-I am currently completing my PhD, where I focused on developing unfitted FEM frameworks for the hydrodynamic modeling of floating structures. My research addressed the meshing bottleneck and the extension to offshore applications, specifically aiming to improve how we simulate the interaction between massive marine structures and the dynamic environments they inhabit.
+Computational engineer finishing a PhD at TU Delft on the application of unfitted Finite Element Methods (FEM) to the simulation of floating offshore structures. Four years of designing simulation frameworks, implementing and benchmarking numerical methods, and extending open-source tools to cover missing capabilities.
 
-Core Expertise: Unfitted / Immersed / Embedded methods, Potential Theory formulations for offshore Fluid-Structure Interaction, and Computational Fluid Dynamics.
+My work sits at the intersection of numerical methods and scientific software development — equally interested in why a method works mathematically and making it work reliably in practice.
 
-The Mission: Making numerical modeling more efficient for complex geometries without the traditional "meshing headache".
+---
 
-## 🛠️ Research Focus & Interests
-Unfitted FEM: Developing algorithms that handle complex and/or moving boundaries without conforming meshes. Specifically: Aggregated unfitted FEM, Cut FEM, Shifted Boundary Method (SBM), Weighted SBM, and Generalized SBM.
+## PhD Research
 
-Offshore Engineering: Modeling floating and submerged platforms for aquaculture, infrastructure and energy.
+The core of my PhD is a simulation framework built in Julia on top of the [Gridap.jl](https://github.com/gridap/Gridap.jl) ecosystem for time- and frequency-domain analysis of floating offshore structures of arbitrary geometry. The framework applies unfitted FEM to impose boundary conditions on rigid floating structures without body-fitted mesh generation, removing the meshing bottleneck for complex geometries.
 
-Aero- and Hydrodynamics: Solving both low- and high-fidelity fluid problems.
+**The framework supports:**
+- Monolithic fluid-structure coupling with linear potential flow hydrodynamics
+- 6-DOF rigid body dynamics and multi-body simulations
+- Implicit (level set) and explicit (STL) geometry representations
+- Adaptive mesh refinement via p4est (serial)
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jan-modderman) 
+**Unfitted FEM formulations implemented:** CutFEM, AgFEM, SBM, WSBM
 
-# 💻 Tech Stack:
-[![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)](https://julialang.org/) <!--[![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)--> [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
+SBM and WSBM were not previously available in Gridap and required extending [STLCutters.jl](https://github.com/gridap/STLCutters.jl) to support distance function computation for arbitrary geometries.
 
-# 💡 A Note on the PhD Code
-The repositories highlighted below represent the culmination of my doctoral work. They transition from theoretical unfitted FEM formulations to practical, hydrodynamic solvers used for analysis of offshore structures.
+---
 
-🚨 actively being refactored and documented 🚨
+## Repositories
 
-<table align="center">
-  <tr>
-    <td align="center" width="33%">
-      <a href="https://github.com/janmodderman/EmbeddedBenchmark.jl">
-        <img src="https://img.shields.io/badge/Benchmark_Study-Chapter_4-blue?style=for-the-badge&logo=github" alt="Chapter 4 Package" />
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://github.com/janmodderman/EmbeddedTransientPF.jl">
-        <img src="https://img.shields.io/badge/Transient_Simulations-Chapter_5-green?style=for-the-badge&logo=github" alt="Chapter 5 Package" />
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://github.com/janmodderman/EmbeddedCoefficients.jl">
-        <img src="https://img.shields.io/badge/Hydrodynamic_Coefficients-Chapter_6-orange?style=for-the-badge&logo=github" alt="Chapter 6 Package" />
-      </a>
-    </td>
-  </tr>
-</table>
+| Repository | Description |
+|---|---|
+| [EmbeddedBenchmark.jl](https://github.com/janmodderman/EmbeddedBenchmark.jl) | Systematic benchmark of CutFEM, AgFEM, SBM, and WSBM: convergence, condition numbers, and performance in 2D and 3D |
+| [EmbeddedTransientPF.jl](https://github.com/janmodderman/EmbeddedTransientPF.jl) | Time-domain simulation of floating structures using linear potential flow and unfitted FEM, validated against the OC4 DeepCwind semisubmersible |
+| [EmbeddedCoefficients.jl](https://github.com/janmodderman/EmbeddedCoefficients.jl) | Estimation of added mass and damping coefficients in 2D and 3D using unfitted FEM formulations |
+
+---
+
+## Tech Stack
+
+![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+---
+
+## Links
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jan-modderman)
