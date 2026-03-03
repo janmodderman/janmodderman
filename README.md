@@ -24,6 +24,8 @@ Aero- and Hydrodynamics: Solving both low- and high-fidelity fluid problems.
 # 💡 A Note on the PhD Code
 The repositories highlighted below represent the culmination of my doctoral work. They transition from theoretical unfitted FEM formulations to practical, hydrodynamic solvers used for analysis of offshore structures.
 
+🚨 actively being refactored and documented 🚨
+
 <table align="center">
   <tr>
     <td align="center" width="33%">
